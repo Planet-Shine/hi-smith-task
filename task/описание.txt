@@ -1,0 +1,4 @@
+https://www.npmjs.com/package/vk-openapi
+https://vk.com/dev/openapi
+https://www.npmjs.com/package/vkapi
+https://vk.com/dev/

@@ -2,7 +2,8 @@ angular.module('vkNews', [
     'ui.bootstrap',
     'searchForm',
     'newsList',
-    'vkNewsBox'
+    'vkNewsBox',
+    'slideShow'
 ]);
 /*
 VK.Api._callbacks[3515310]({

@@ -56,13 +56,14 @@ angular
                     fields: 'name,first_name,last_name'
                 },
                 function (r) {
-                    if (r.response) {
-                        data.news = mergeFromName(r.response);
-                    }
-                    if (r.error) {
-                        data.error = r.error;
-                    }
-                    $rootScope.$digest();
+                    $rootScope.$apply(function () {
+                        if (r.response) {
+                            data.news = mergeFromName(r.response);
+                        }
+                        if (r.error) {
+                            data.error = r.error;
+                        }
+                    });
                 }
             );
         }
@@ -77,13 +78,14 @@ angular
                     fields: 'name,first_name,last_name'
                 },
                 function (r) {
-                    if (r.response) {
-                        data.news = mergeFromName(r.response);
-                    }
-                    if (r.error) {
-                        data.error = r.error;
-                    }
-                    $rootScope.$digest();
+                    $rootScope.$apply(function () {
+                        if (r.response) {
+                            data.news = mergeFromName(r.response);
+                        }
+                        if (r.error) {
+                            data.error = r.error;
+                        }
+                    });
                 }
             );
         }

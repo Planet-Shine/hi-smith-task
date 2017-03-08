@@ -1,4 +1,9 @@
 
 
 angular
-    .module('core', ['core.vk', 'core.unixDate']);
+    .module('core', [
+        'core.vk',
+        'core.unixDate',
+        'core.slideShow',
+        'core.slideShowImage'
+    ]);

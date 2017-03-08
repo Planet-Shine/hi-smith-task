@@ -13,7 +13,7 @@
                 <li class="photo"
                     ng-repeat="attachment in news.attachments"
                     ng-if="attachment.type === 'photo'"
-                    ng-click="$ctrl.showPhoto(attachment.photo.src_xxbig || attachment.photo.src_xbig || attachment.photo.src_big || attachment.photo.src)">
+                    ng-click="$ctrl.showSlide(attachment.photo.src_xxbig || attachment.photo.src_xbig || attachment.photo.src_big || attachment.photo.src)">
                         <img ng-src="{{attachment.photo.src_small}}" />
                 </li>
             </ul>

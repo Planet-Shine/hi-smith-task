@@ -1,4 +1,6 @@
 
 
 angular
-    .module('vkNewsBox', []);
+    .module('vkNewsBox', [
+        'core'
+    ]);

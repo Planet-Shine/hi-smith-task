@@ -6,6 +6,10 @@ angular
         controller: searchFormController
     });
 
-function searchFormController() {
-
+function searchFormController($vk) {
+    var vm = this;
+    this.data = $vk.data;
+    vm.onSubmit = function () {
+        $vk.setSearchQuery();
+    };
 }

@@ -6,13 +6,13 @@ angular
         controller: newsListController
     });
 
-function newsListController () {
+function newsListController ($vk) {
     var vm = this;
-    vm.list = [
-        'item 1',
-        'item 2',
-        'item 3',
-        'item 4',
-        'item 5'
-    ];
+    vm.data = $vk.data;
+    vm.showPhoto = showPhoto;
+
+    function showPhoto(url) {
+        console.log(url);
+        // slideShow
+    };
 }

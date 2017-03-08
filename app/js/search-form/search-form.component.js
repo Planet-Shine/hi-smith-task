@@ -6,10 +6,12 @@ angular
         controller: searchFormController
     });
 
-function searchFormController($vk) {
-    var vm = this;
-    this.data = $vk.data;
+function searchFormController($vk, hismithStat) {
+    var vm = this,
+        data = $vk.data;
+    this.data = data;
     vm.onSubmit = function () {
+        hismithStat.sendQueryStat(data.searchQuery);
         $vk.setSearchQuery();
     };
 }

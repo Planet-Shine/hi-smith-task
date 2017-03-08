@@ -5,5 +5,6 @@ angular
         'core.vk',
         'core.unixDate',
         'core.slideShow',
-        'core.slideShowImage'
+        'core.slideShowImage',
+        'core.hismithStat'
     ]);
